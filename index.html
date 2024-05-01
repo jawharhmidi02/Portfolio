@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- NavBar -->
+
     <nav class="pcnav">
         <div class="logo">Jawhar Hmidi</div>
         <div>
@@ -29,6 +32,9 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Responsive NavBar -->
+
     <nav class="responsivenav">
         <div class="logo">Jawhar Hmidi</div>
         <div class="responsivemenu">
@@ -53,6 +59,32 @@
             </div>
         </div>
     </nav>
+
+    <!-- Profile Section -->
+
+    <section id="Profile">
+        <div class="piccontainter">
+            <img src="./other/profilepic.png" alt="Jawhar Hmidi Profile Picture">
+        </div>
+        <div class="textsection">
+            <p class="textp1">Hello, I'm</p>
+            <h1 class="title">Jawhar Hmidi</h1>
+            <p class="textp2">Fullstack Developer</p>
+            <div class="buttoncontainer">
+                <button class="button button2" onclick="window.open('./other/jawharhmidi-cv.pdf')">
+                    Download CV
+                </button>
+                <button class="button button1" onclick="location.href= '#Contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div class="socialcontainer">
+                <img src="./other/linkedin2.png" alt="Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/jawharhmidi'">
+                <img src="./other/github2.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/jawharhmidi02'">
+                
+            </div>
+        </div>
+    </section>
 
     <script src="index.js"></script>
 </body>

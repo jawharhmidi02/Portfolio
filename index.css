@@ -89,20 +89,65 @@ a:hover{
     width: 100%;
     height: 2px;
     background-color: white;
-    transition: all 0.4 ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .menulinks{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: black;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.4 ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .menulinks a{
     display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menulinks li{
+    list-style: none;
+}
+
+.menulinks.show{
+    max-height: 300px !important;
+}
+
+.responsiveicon.show span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.responsiveicon.show span:nth-child(2){
+    opacity: 0;
+}
+
+.responsiveicon.show span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.responsiveicon span:first-child{
+    transform: none;
+}
+
+.responsiveicon span:nth-child(){
+    opacity: 1;
+}
+
+.responsiveicon span:last-child{
+    transform: none;
+}
+
+/* Profile Section */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
 }
