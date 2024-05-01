@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: Jawhar Hmidi</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    Hello
-    Bye
+    <nav class="pcnav">
+        <div class="logo">Jawhar Hmidi</div>
+        <div>
+            <ul class="navlinks">
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="responsivenav">
+        <div class="logo">Jawhar Hmidi</div>
+        <div class="responsivemenu">
+            <div class="responsiveicon" onclick="showMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menulinks">
+                <li>
+                    <a onclick="showMenu()" href="#About">About</a>
+                </li>
+                <li>
+                    <a onclick="showMenu()" href="#Skills">Skills</a>
+                </li>
+                <li>
+                    <a onclick="showMenu()" href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a onclick="showMenu()" href="#Contact">Contact</a>
+                </li>
+            </div>
+        </div>
+    </nav>
 
     <script src="index.js"></script>
 </body>
