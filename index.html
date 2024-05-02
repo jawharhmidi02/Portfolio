@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio: Jawhar Hmidi</title>
+    <title>Jawhar Hmidi</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,7 +72,7 @@
             <p class="textp2">Fullstack Developer</p>
             <div class="buttoncontainer">
                 <button class="button button2" onclick="window.open('./other/jawharhmidi-cv.pdf')">
-                    Download CV
+                    Open CV
                 </button>
                 <button class="button button1" onclick="location.href= '#Contact'">
                     Contact Me
@@ -121,7 +121,6 @@ needed. Ready to give my full potentials and work as it is my life passion and m
                     </div>
             </div>
         </div>
-        <img src="./other/arrow2.png" alt="arrow icon" class="icon arrow" onclick="location.href = '#Skills'">
     </section>
 
     <!-- Skills Section -->
@@ -138,6 +137,13 @@ needed. Ready to give my full potentials and work as it is my life passion and m
                             <img src="./other/checkmark2.png" alt="checkmark" class="icon">
                             <div>
                                 <h3>HTML</h3>
+                                <p>Mastered</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./other/checkmark2.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Canvas</h3>
                                 <p>Mastered</p>
                             </div>
                         </article>
@@ -201,7 +207,6 @@ needed. Ready to give my full potentials and work as it is my life passion and m
                 </div>
             </div>
         </div>
-        <img src="./other/arrow2.png" alt="arrow icon" class="icon arrow" onclick="location.href = '#Projects'">
 
     </section>
 
@@ -211,13 +216,104 @@ needed. Ready to give my full potentials and work as it is my life passion and m
         <p class="textp1">Browse My</p>
         <h1 class="title">Projects</h1>
         <div class="skills-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./other/" alt="">
+            <div class="about-containers">
+                    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./other/project1.png" alt="Shooting circles" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">
+                        Shooting Circles
+                    </h2>
+                    <div class="buttoncontainer">
+                        <button class="button button2 project-button" onclick="location.href = 'https://github.com/jawharhmidi02/Shooting-Circles'">
+                            Github
+                        </button>
+                        <button class="button button2 project-button" onclick="location.href = 'http://shootingcircles.free.nf/?i=1'">
+                            Visit Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./other/project21.png" alt="Shooting circles" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">
+                        TicTacToe
+                    </h2>
+                    <div class="buttoncontainer">
+                        <button class="button button2 project-button" onclick="location.href = 'https://github.com/jawharhmidi02/TicTacToe'">
+                            Github
+                        </button>
+                        <button class="button button2 project-button" onclick="location.href = 'http://tictactoe.free.nf'">
+                            Visit Project
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./other/project31.png" alt="Shooting circles" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">
+                        Chat with me
+                    </h2>
+                    <div class="buttoncontainer">
+                        <button class="button button2 project-button button3">
+                            Comming soon...
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact section -->
+
+    <section id="Contact">
+        <p class="textp1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./other/email2.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:jawharhmidi01@gmail.com">jawharhmidi01@gmail.com</a></p>
+
+            </div>
+            <div class="contact-info-container">
+                <img src="./other/linkedin2.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href='https://www.linkedin.com/in/jawharhmidi'>Jawhar Hmidi</a></p>
+            </div>
+            <div class="contact-info-container githubcontainer">
+                <img src="./other/github2.png" alt="github icon" class="icon contact-icon">
+                <p><a href='https://github.com/jawharhmidi02'>Jawhar Hmidi</a></p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="navlinks">
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p></p>
+    </footer>
 
     <script src="index.js"></script>
 </body>

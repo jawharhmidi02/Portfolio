@@ -76,15 +76,6 @@ a:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
-    .pcnav{
-        display: none;  
-    }
-    .responsivenav{
-        display: flex ;
-    }
-}
-
 .responsiveicon span{
     width: 100%;
     height: 2px;
@@ -336,3 +327,173 @@ article .icon{
 
 /* Projects Section */
 
+#Projects{
+    position: relative;
+}
+
+/* .color-container{
+    border-color: aqua;
+} */
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title{
+    margin: 1rem;
+    color: white;
+}
+
+.button3{
+    width: 10rem;
+}
+
+/* Contact section */
+
+#Contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: white 0.1rem solid;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+    height: 2rem;
+}
+
+.email-icon{
+    height: 2.5rem;
+}
+
+/* Footer */
+
+footer p{
+    text-align: center;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 1400px) {
+    #Profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers{
+        flex-wrap: wrap;
+    }
+    a:hover{
+        text-underline-offset: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pcnav{
+        display: none;  
+    }
+    .responsivenav{
+        display: flex ;
+    }
+    #Skills, .skills-details-container{
+        margin-top: 2rem;
+    }
+    #Profile, .section-container{
+        display: block;
+
+    }
+    section, .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    #Contact{
+        height: 40vh;
+    }
+    footer{
+        height: 30vh;
+    }
+    #Profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 0rem;
+    }
+    .about-containers, .contact-info-upper-container, .buttoncontainer{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin: 0rem;
+    }
+    .githubcontainer{
+        margin-top: 0.5rem;
+    }
+    .contact-info-container p,.navlinks li a{
+        font-size: 1rem;
+    }
+    .skills-sub-title{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .navlinks{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .textp2{
+        font-size: 1.25rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+
+}
