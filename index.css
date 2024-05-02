@@ -145,9 +145,194 @@ a:hover{
     transform: none;
 }
 
-/* Profile Section */
+/* Section */
 
 section{
     padding-top: 4vh;
     height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
+
+.section-container{
+    display: flex;
+}
+
+/* Profile */
+
+#Profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 300px;
+    margin: auto 0;
+    justify-content: center;
+} 
+
+.textsection{
+    align-self: center;
+    text-align: center;
+}
+
+.textsection p{
+    font-weight: 600;
+}
+
+.textp1{
+    text-align: center;
+}
+
+.textp2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+.title{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.socialcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icons */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* buttons */
+
+.buttoncontainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button{
+    font-weight: 600;
+    transition: all 0.4s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.button1, 
+.button2{
+    border: white 0.1rem solid;
+    cursor: pointer;
+    background: black;
+}
+
+.button1:hover, 
+.button2:hover{
+    border: red 0.1rem solid;
+    color: red;
+}
+
+.buttoncontainer{
+    gap: 1rem;
+}
+
+/* about section */
+
+#About{
+    position: relative;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: black;
+    border-radius: 2rem;
+    border: red 0.1rem solid;
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 70%;
+}
+
+/* Skills section */
+
+#Skills{
+    position: relative;
+}
+
+.skills-sub-title{
+    color: red;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.skills-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+#Skills .t1{
+    font-size: 5rem;
+}
+
+/* Projects Section */
+
