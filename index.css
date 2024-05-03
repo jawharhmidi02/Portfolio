@@ -128,7 +128,7 @@ a:hover{
     transform: none;
 }
 
-.responsiveicon span:nth-child(){
+.responsiveicon span:nth-child(2){
     opacity: 1;
 }
 
@@ -508,8 +508,8 @@ footer p{
 
 .nothidden{
     opacity: 1;
-    transform: translateX(0);
-    filter: blur(0);
+    transform: none;
+    filter: none;
 }
 
 .late1{
