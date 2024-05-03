@@ -495,5 +495,31 @@ footer p{
     .text-container{
         text-align: justify;
     }
+}
 
+/* Animation script */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.late1{
+    transition-delay: 200ms;
+}
+
+.late2{
+    transition-delay: 400ms;
+}
+
+.late3{
+    transition-delay: 600ms;
 }
