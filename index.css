@@ -587,3 +587,17 @@ footer p{
 .late3{
     transition-delay: 600ms;
 }
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red !important;
+    border-radius: 10px;
+}
