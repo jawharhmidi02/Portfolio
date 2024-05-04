@@ -447,16 +447,7 @@ footer p{
     filter: blur(10px) !important;
 }
 @media screen and (max-width:800px) {
-    .late5{
-        font-size: 3rem;
-    }
-    .loadingicon img{
-        width: 3rem;
-    }
-    .loadingicon{
-        top: 50vh;
-    }
-    .text{
+    .text1{
         font-size: 4rem;
     }
 }
