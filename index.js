@@ -1,13 +1,13 @@
-document.body.style.overflow = "hidden";
-const hiddenElements = document.querySelectorAll(".hidden1");
-hiddenElements[0].classList.add("show1");
+// document.body.style.overflow = "hidden";
+// const hiddenElements = document.querySelectorAll(".hidden1");
+// hiddenElements[0].classList.add("show1");
 
 setTimeout(function(){
     document.querySelector(".welcomepage").classList.add("pagehidden");
     document.querySelector(".page").classList.remove("page");
     document.body.style.overflow = "";
     document.querySelector(".welcomepage").style.display = "none";
-}, 4000);
+}, 100);
 
 
 function showMenu(){
