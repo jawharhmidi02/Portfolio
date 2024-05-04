@@ -4,10 +4,11 @@
     padding: 0;
     margin: 0;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
-    font-family: "Roboto", sans-serif;
+    
     background-color: black;
 }
 
@@ -394,6 +395,70 @@ article .icon{
 
 footer p{
     text-align: center;
+}
+
+/* Welcome Page */
+
+.page{
+    display: none;
+    transform: translateY(100vh);
+}
+.showpage{
+    display: block;
+    transform: translateY(-100vh);
+}
+.welcomepage{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+.show1{
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+}
+.hidden1{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+.text1{
+    font-size: 6rem;
+    color: red;
+}
+
+.pagehidden{
+    transform: translateY(-100%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1s ease;
+}
+
+.rightgo{
+    transform: translateX(100%) !important;
+    opacity: 0 !important;
+    filter: blur(10px) !important;
+}
+@media screen and (max-width:800px) {
+    .late5{
+        font-size: 3rem;
+    }
+    .loadingicon img{
+        width: 3rem;
+    }
+    .loadingicon{
+        top: 50vh;
+    }
+    .text{
+        font-size: 4rem;
+    }
 }
 
 /* Responsive CSS */
