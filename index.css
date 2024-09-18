@@ -286,7 +286,6 @@ section{
 
 #Skills{
     position: relative;
-    height: 150vh;
 }
 
 .skills-sub-title{
@@ -591,7 +590,7 @@ footer p{
 /* Scroll Bar */
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
     background: black;

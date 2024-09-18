@@ -8,7 +8,7 @@ setTimeout(function(){
     document.body.style.overflow = "";
     document.querySelector(".welcomepage").style.display = "none";
     
-}, 4000);
+}, 3000);
 
 
 function showMenu(){
@@ -25,9 +25,9 @@ const observer = new IntersectionObserver((entries) => {
         if(entry.isIntersecting){
             entry.target.classList.add("nothidden");
         }
-        else{
-            entry.target.classList.remove("nothidden");
-        }
+        // else{
+        //     entry.target.classList.remove("nothidden");
+        // }
     });
 });
 const hiddenElement = document.querySelectorAll(".hidden");
