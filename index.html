@@ -1,540 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jawhar Hmidi</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./other/icon-logo.jpg" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./other/icon-logo.jpg"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Welcome Page -->
 
     <div class="welcomepage">
-        <h1 class="text1 hidden1">Welcome</h1>
-
+      <h1 class="text1 hidden1">Welcome</h1>
     </div>
 
     <!-- Main Page -->
 
     <div class="page">
+      <!-- NavBar -->
 
-        <!-- NavBar -->
+      <nav class="pcnav hidden">
+        <div class="logo">Jawhar Hmidi</div>
+        <div>
+          <ul class="navlinks">
+            <li>
+              <a href="#About">About</a>
+            </li>
+            <li>
+              <a href="#Skills">Skills</a>
+            </li>
+            <li>
+              <a href="#Projects">Projects</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <nav class="pcnav hidden">
-            <div class="logo">Jawhar Hmidi</div>
-            <div>
-                <ul class="navlinks">
-                    <li>
-                        <a href="#About">About</a>
-                    </li>
-                    <li>
-                        <a href="#Skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#Projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#Contact">Contact</a>
-                    </li>
-                </ul>
+      <!-- Responsive NavBar -->
+
+      <nav class="responsivenav hidden">
+        <div class="logo">Jawhar Hmidi</div>
+        <div class="responsivemenu">
+          <div class="responsiveicon" onclick="showMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menulinks">
+            <li>
+              <a onclick="showMenu()" href="#About">About</a>
+            </li>
+            <li>
+              <a onclick="showMenu()" href="#Skills">Skills</a>
+            </li>
+            <li>
+              <a onclick="showMenu()" href="#Projects">Projects</a>
+            </li>
+            <li>
+              <a onclick="showMenu()" href="#Contact">Contact</a>
+            </li>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Profile Section -->
+
+      <section class="hidden" id="Profile">
+        <div class="section__pic-container">
+          <img
+            src="./other/profilepic.png"
+            alt="Jawhar Hmidi Profile Picture"
+          />
+        </div>
+        <div class="textsection">
+          <p class="textp1">Hello, I'm</p>
+          <h1 class="title">Jawhar Hmidi</h1>
+          <p class="textp2">Fullstack Developer</p>
+          <div class="buttoncontainer">
+            <button
+              class="button button2"
+              onclick="window.open('./other/jawharhmidi-cv.pdf')"
+            >
+              Open CV
+            </button>
+            <button class="button button1" onclick="location.href= '#Contact'">
+              Contact Me
+            </button>
+          </div>
+          <div class="socialcontainer">
+            <img
+              src="./other/linkedin2.png"
+              alt="Linkedin profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/jawharhmidi'"
+            />
+            <img
+              src="./other/github2.png"
+              alt="Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/jawharhmidi02'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+
+      <section class="hidden" id="About">
+        <p class="textp1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container hidden late1">
+            <img
+              src="./other/aboutpic3.png"
+              alt="Profile Picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container hidden late2">
+                <img
+                  src="./other/experience2.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years<br />Fullstack Developer</p>
+              </div>
+              <div class="details-container hidden late3">
+                <img
+                  src="./other/education2.png"
+                  alt="education icon"
+                  class="icon"
+                />
+                <h3>education</h3>
+                <p>Third year of Bachelor Degree<br />in Computer Science</p>
+              </div>
             </div>
-        </nav>
-
-        <!-- Responsive NavBar -->
-
-        <nav class="responsivenav hidden">
-            <div class="logo">Jawhar Hmidi</div>
-            <div class="responsivemenu">
-                <div class="responsiveicon" onclick="showMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menulinks">
-                    <li>
-                        <a onclick="showMenu()" href="#About">About</a>
-                    </li>
-                    <li>
-                        <a onclick="showMenu()" href="#Skills">Skills</a>
-                    </li>
-                    <li>
-                        <a onclick="showMenu()" href="#Projects">Projects</a>
-                    </li>
-                    <li>
-                        <a onclick="showMenu()" href="#Contact">Contact</a>
-                    </li>
-                </div>
+            <div class="text-container">
+              <p>
+                I am a highly motivated and passionate student with a deep
+                interest in programming and development. I thrive in competitive
+                environments and am dedicated to hard work. My enthusiasm for
+                computer science drives me to continuously learn and master new
+                technologies. I am committed to giving my all, viewing this
+                field not just as a career path but as my true passion and
+                future profession
+              </p>
             </div>
-        </nav>
+          </div>
+        </div>
+      </section>
 
-        <!-- Profile Section -->
+      <!-- Skills Section -->
 
-        <section class="hidden" id="Profile">
-            <div class="section__pic-container">
-                <img src="./other/profilepic.png" alt="Jawhar Hmidi Profile Picture">
+      <section class="hidden" id="Skills">
+        <p class="textp1">Explore my</p>
+        <h1 class="title t1">Skills</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container hidden late1">
+              <h2 class="skills-sub-title">Frontend development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Canvas</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Vite React</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>NextJs</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="textsection">
-                <p class="textp1">Hello, I'm</p>
-                <h1 class="title">Jawhar Hmidi</h1>
-                <p class="textp2">Fullstack Developer</p>
-                <div class="buttoncontainer">
-                    <button class="button button2" onclick="window.open('./other/jawharhmidi-cv.pdf')">
-                        Open CV
-                    </button>
-                    <button class="button button1" onclick="location.href= '#Contact'">
-                        Contact Me
-                    </button>
-                </div>
-                <div class="socialcontainer">
-                    <img src="./other/linkedin2.png" alt="Linkedin profile" class="icon"
-                        onclick="location.href='https://www.linkedin.com/in/jawharhmidi'">
-                    <img src="./other/github2.png" alt="Github profile" class="icon"
-                        onclick="location.href='https://github.com/jawharhmidi02'">
-
-                </div>
+            <div class="details-container hidden late2">
+              <h2 class="skills-sub-title">Backend development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>NodeJs</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>NestJS</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PostgreSql</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MongoDB</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+              </div>
             </div>
-        </section>
-
-        <!-- About section -->
-
-        <section class="hidden" id="About">
-            <p class="textp1">
-                Get to Know More
-            </p>
-            <h1 class="title">
-                About Me
-            </h1>
-            <div class="section-container">
-                <div class="section__pic-container hidden late1">
-                    <img src="./other/aboutpic3.png" alt="Profile Picture" class="about-pic">
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container hidden late2">
-                            <img src="./other/experience2.png" alt="Experience Icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>2+ years<br />Fullstack Developer</p>
-                        </div>
-                        <div class="details-container hidden late3">
-                            <img src="./other/education2.png" alt="education icon" class="icon">
-                            <h3>education</h3>
-                            <p>Third year of Bachelor Degree<br>in Computer Science</p>
-                        </div>
-                    </div>
-                    <div class="text-container ">
-                        <p>
-                            I am a highly motivated and passionate student with a deep interest in programming and
-                            development. I thrive in competitive environments and am dedicated to hard work. My
-                            enthusiasm for computer science drives me to continuously learn and master new technologies.
-                            I am committed to giving my all, viewing this field not just as a career path but as my true
-                            passion and future profession
-                        </p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container hidden late1">
+              <h2 class="skills-sub-title">Artificial Intelligence</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Dynamic Programming</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Machine Learning</h3>
+                    <p>Beginner</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Neural Network</h3>
+                    <p>Beginner</p>
+                  </div>
+                </article>
+              </div>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-
-        <section class="hidden" id="Skills">
-            <p class="textp1">Explore my</p>
-            <h1 class="title t1">Skills</h1>
-            <div class="skills-details-container">
-                <div class="about-containers">
-                    <div class="details-container hidden late1">
-                        <h2 class="skills-sub-title">Frontend development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Canvas</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Vite React</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>NextJs</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-
-                        </div>
-                    </div>
-                    <div class="details-container hidden late2">
-                        <h2 class="skills-sub-title ">Backend development</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>NodeJs</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>PHP</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>NestJS</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>PostgreSql</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>MongoDB</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-
-                        </div>
-                    </div>
-
-                </div>
+            <div class="details-container hidden late2">
+              <h2 class="skills-sub-title">Other</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>OOP</h3>
+                    <p>Mastered</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./other/checkmark2.png"
+                    alt="checkmark"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Problem Solving</h3>
+                    <p>
+                      <a
+                        href="https://leetcode.com/u/hmidihmidis/"
+                        style="
+                          text-decoration: underline;
+                          text-underline-offset: 0.5rem;
+                        "
+                        >My Record</a
+                      >
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="skills-details-container">
-                <div class="about-containers">
-                    <div class="details-container hidden late1">
-                        <h2 class="skills-sub-title">Artificial Intelligence</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Dynamic Programming</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Machine Learning</h3>
-                                    <p>Beginner</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Neural Network</h3>
-                                    <p>Beginner</p>
-                                </div>
-                            </article>
+          </div>
+        </div>
+      </section>
 
-                        </div>
-                    </div>
-                    <div class="details-container hidden late2">
-                        <h2 class="skills-sub-title ">Other</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Python</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>OOP</h3>
-                                    <p>Mastered</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./other/checkmark2.png" alt="checkmark" class="icon">
-                                <div>
-                                    <h3>Problem Solving</h3>
-                                    <p><a href="https://leetcode.com/u/hmidihmidis/"
-                                            style="text-decoration: underline;text-underline-offset: 0.5rem;">My
-                                            Record</a></p>
-                                </div>
-                            </article>
+      <!-- Project Section -->
 
-
-                        </div>
-                    </div>
-
-                </div>
+      <section class="hidden" id="Projects">
+        <p class="textp1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container hidden late1">
+              <div class="article-container">
+                <img
+                  src="./other/project7.png"
+                  alt="L'Arte in Casa Tua"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">L'Arte in Casa Tua</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/selmifaten/arteincasatua'"
+                >
+                  Github
+                </button>
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://www.arteincasatua.com/'"
+                >
+                  Visit Live
+                </button>
+              </div>
             </div>
-
-        </section>
-
-        <!-- Project Section -->
-
-        <section class="hidden" id="Projects">
-            <p class="textp1">Browse My</p>
-            <h1 class="title">Projects</h1>
-            <div class="skills-details-container">
-
-                <div class="about-containers">
-
-                    <div class="details-container color-container hidden late1">
-                        <div class="article-container">
-                            <img src="./other/project7.png" alt="L'Arte in Casa Tua" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            L'Arte in Casa Tua
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/selmifaten/arteincasatua'">
-                                Github
-                            </button>
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://www.arteincasatua.com/'">
-                                Visit Live
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container hidden late1">
-                        <div class="article-container">
-                            <img src="./other/project8.png" alt="Burger Casa" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            Burger Casa
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/burger-casa-front'">
-                                Github
-                            </button>
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://burger-casa-front.vercel.app'">
-                                Visit Live
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container hidden late1">
-                        <div class="article-container">
-                            <img src="./other/project9.png" alt="Golden Brand" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            Golden Brand
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/golden-brand-front'">
-                                Github
-                            </button>
-                            <!-- <button class="button button2 project-button"
+            <div class="details-container color-container hidden late1">
+              <div class="article-container">
+                <img
+                  src="./other/project8.png"
+                  alt="Burger Casa"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Burger Casa</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/burger-casa-front'"
+                >
+                  Github
+                </button>
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://burger-casa-front.vercel.app'"
+                >
+                  Visit Live
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container hidden late1">
+              <div class="article-container">
+                <img
+                  src="./other/project9.png"
+                  alt="Golden Brand"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Golden Brand</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/golden-brand-front'"
+                >
+                  Github
+                </button>
+                <!-- <button class="button button2 project-button"
                                 onclick="location.href = 'http://numbersums.free.nf'">
                                 Visit Live
                             </button> -->
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="skills-details-container">
-
-                <div class="about-containers">
-
-                    <div class="details-container color-container hidden late1">
-                        <div class="article-container">
-                            <img src="./other/project1.png" alt="Shooting circles" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            Shooting Circles
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/Shooting-Circles'">
-                                Github
-                            </button>
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'http://shootingcircles.free.nf/?i=1'">
-                                Visit Live
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container hidden late1">
-                        <div class="article-container">
-                            <img src="./other/project2.png" alt="BookStore" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            BookStore
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/bookshow-front'">
-                                Github
-                            </button>
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://bookshow-front.onrender.com/home'">
-                                Visit Live
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container hidden late1">
-                        <div class="article-container">
-                            <img src="./other/project4.png" alt="Shooting circles" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            Number Sums
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/Number-Sums'">
-                                Github
-                            </button>
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'http://numbersums.free.nf'">
-                                Visit Live
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container hidden late1">
+              <div class="article-container">
+                <img
+                  src="./other/project1.png"
+                  alt="Shooting circles"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Shooting Circles</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/Shooting-Circles'"
+                >
+                  Github
+                </button>
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'http://shootingcircles.free.nf/?i=1'"
+                >
+                  Visit Live
+                </button>
+              </div>
             </div>
-            <div class="skills-details-container">
-                <div class="about-containers">
-
-
-                    <div class="details-container color-container hidden late2">
-                        <div class="article-container">
-                            <img src="./other/project5.png" alt="Shooting circles" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            Chat Nexus
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/ChatNexus'">
-                                Github
-                            </button>
-                            <button class="button button2 project-button"
-                                onclick="location.href = 'https://chatnexus-7din.onrender.com/'">
-                                Visit Live
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container hidden late3">
-                        <div class="article-container">
-                            <img src="./other/project3.png" alt="Shooting circles" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            My Portfolio
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button button3"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/Portfolio'">
-                                Github
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container hidden late3">
-                        <div class="article-container">
-                            <img src="./other/project6.png" alt="Shooting circles" class="project-img">
-                        </div>
-                        <h2 class="skills-sub-title project-title">
-                            Canvas Plugins
-                        </h2>
-                        <div class="buttoncontainer">
-                            <button class="button button2 project-button button3"
-                                onclick="location.href = 'https://github.com/jawharhmidi02/Canvas-Plugins'">
-                                Github
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="details-container color-container hidden late1">
+              <div class="article-container">
+                <img
+                  src="./other/project2.png"
+                  alt="BookStore"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">BookStore</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/bookshow-front'"
+                >
+                  Github
+                </button>
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://bookshow-front.onrender.com/home'"
+                >
+                  Visit Live
+                </button>
+              </div>
             </div>
-        </section>
-
-        <!-- Contact section -->
-
-        <section class="hidden" id="Contact">
-            <p class="textp1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-upper-container hidden late1">
-                <div class="contact-info-container">
-                    <img src="./other/email2.png" alt="email icon" class="icon contact-icon email-icon">
-                    <p><a href="mailto:jawharhmidi01@gmail.com">jawharhmidi01@gmail.com</a></p>
-
-                </div>
-                <div class="contact-info-container">
-                    <img src="./other/linkedin2.png" alt="linkedin icon" class="icon contact-icon">
-                    <p><a href='https://www.linkedin.com/in/jawharhmidi'>Jawhar Hmidi</a></p>
-                </div>
-                <div class="contact-info-container githubcontainer">
-                    <img src="./other/github2.png" alt="github icon" class="icon contact-icon">
-                    <p><a href='https://github.com/jawharhmidi02'>Jawhar Hmidi</a></p>
-                </div>
-
-
+            <div class="details-container color-container hidden late1">
+              <div class="article-container">
+                <img
+                  src="./other/project4.png"
+                  alt="Shooting circles"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Number Sums</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/Number-Sums'"
+                >
+                  Github
+                </button>
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'http://numbersums.free.nf'"
+                >
+                  Visit Live
+                </button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container hidden late2">
+              <div class="article-container">
+                <img
+                  src="./other/project5.png"
+                  alt="Shooting circles"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Chat Nexus</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/ChatNexus'"
+                >
+                  Github
+                </button>
+                <button
+                  class="button button2 project-button"
+                  onclick="location.href = 'https://chatnexus-7din.onrender.com/'"
+                >
+                  Visit Live
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container hidden late3">
+              <div class="article-container">
+                <img
+                  src="./other/project3.png"
+                  alt="Shooting circles"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">My Portfolio</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button button3"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/Portfolio'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container hidden late3">
+              <div class="article-container">
+                <img
+                  src="./other/project6.png"
+                  alt="Shooting circles"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">Canvas Plugins</h2>
+              <div class="buttoncontainer">
+                <button
+                  class="button button2 project-button button3"
+                  onclick="location.href = 'https://github.com/jawharhmidi02/Canvas-Plugins'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Footer -->
+      <!-- Contact section -->
 
-        <footer class="hidden">
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="navlinks">
-                        <li>
-                            <a href="#About">About</a>
-                        </li>
-                        <li>
-                            <a href="#Skills">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#Projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <p></p>
-        </footer>
+      <section class="hidden" id="Contact">
+        <p class="textp1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container hidden late1">
+          <div class="contact-info-container">
+            <img
+              src="./other/email2.png"
+              alt="email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:jawharhmidi01@gmail.com"
+                >jawharhmidi01@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./other/linkedin2.png"
+              alt="linkedin icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a href="https://www.linkedin.com/in/jawharhmidi">Jawhar Hmidi</a>
+            </p>
+          </div>
+          <div class="contact-info-container githubcontainer">
+            <img
+              src="./other/github2.png"
+              alt="github icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://github.com/jawharhmidi02">Jawhar Hmidi</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="hidden">
+        <nav>
+          <div class="nav-links-container">
+            <ul class="navlinks">
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Skills">Skills</a>
+              </li>
+              <li>
+                <a href="#Projects">Projects</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <p></p>
+      </footer>
     </div>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
